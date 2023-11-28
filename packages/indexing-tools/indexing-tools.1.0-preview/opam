@@ -1,0 +1,15 @@
+opam-version: "2.0"
+synopsis: "Project indexation utilities"
+description: "A virtual packages that depends on all the tools required to get project-wide occurrences in OCaml project"
+maintainer: ["Ulysse Gérard"]
+authors: [ "Ulysse Gérard" ]
+license: "MIT"
+homepage: "https://github.com/voodoos/opam-repository-index"
+bug-reports: "https://github.com/voodoos/opam-repository-index/issues"
+depends: [
+  "ocaml-variants" {= "4.14.2+index"}
+  "dune" {= "3.11.1+index"}
+  "ocaml-index" {= "0.1"}
+  "merlin" {= "5.0-414"}
+  "ocaml-lsp-server" {= "1.16.2+index"}
+]
