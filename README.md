@@ -36,7 +36,7 @@ opam switch create --repositories=default,index . 4.14.2+index
 opam install indexing-tools
 ```
 
-# Project-wide occurrences
+# Generating the index
 
 To index your project you need to build the `@ocaml-index` target in addition to
 your project's targets. Running dune in watch mode is recommended to always keep
