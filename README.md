@@ -9,7 +9,7 @@ indexing binary and updated merlin / ocaml-lsp servers.
 
 # What the feature does...
 
-✅ Every usages of types, values, constructors and labels in *ml files* in the entirer workspace
+✅ Every usages of types, values, constructors and labels in *ml files* in the entire workspace
 
 ✅ Usages of modules (like in `include M`) in *ml* files
 
