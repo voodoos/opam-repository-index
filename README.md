@@ -32,7 +32,7 @@ indexing binary and updated merlin / ocaml-lsp servers.
 opam repo add index https://github.com/voodoos/opam-repository-index.git
 
 # Create a (local or global) switch with that repository:
-opam switch create --repositories=default,index . 4.14.2+index
+opam switch create --repositories=default,index 4.14.2+index
 
 # Install all tools with the virtual package:
 opam install indexing-tools
