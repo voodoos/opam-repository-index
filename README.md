@@ -23,7 +23,9 @@ indexing binary and updated merlin / ocaml-lsp servers.
 
 ❌ Occurrences of modules appearing in paths: like `M` and `N` in `M.N.x`
 
-# Using the repository and installing the tools
+# How-to
+
+## 1. Install the switch and tools
 
 ```sh
 # Add the repository:
@@ -36,7 +38,7 @@ opam switch create --repositories=default,index . 4.14.2+index
 opam install indexing-tools
 ```
 
-# Generating the index
+## 2. Generate the index for your project
 
 To index your project you need to build the `@ocaml-index` target in addition to
 your project's targets. Running dune in watch mode is recommended to always keep
@@ -49,8 +51,16 @@ dune build @ocaml-index @install --watch
 When the index is built and up-to-date `references` queries should return value
 usages in all the project's sources.
 
+## 3. Query
+
+In vscode, or another editor using lsp, place the cursor on a definition or usage of a type, value, constructor or label and trigger the `find all references` commands.
+
+https://github.com/voodoos/opam-repository-index/assets/5031221/c715f180-d3f7-4e09-b29b-e43872465511
+
+
 # Current limitations
 
+- Project using PPXes might show unexpected behavior, please open an issue if this happens!
 - Declarations are not considered. Only the definition and usages of a type,
   value or module can be used as a starting point to perform a query. The result
   of the query will show all the usages along with its definition but not the
