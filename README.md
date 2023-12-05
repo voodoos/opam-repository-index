@@ -19,9 +19,9 @@ indexing binary and updated merlin / ocaml-lsp servers.
 
 ❌ Usages of types and modules in *mli* files
 
-❌ Declarations related to definitions in both *ml* and *mli* files.
+❌ *Declarations* related to definitions in both *ml* and *mli* files.
 
-❌ Occurrences of modules appearing in paths: `M.N.x`
+❌ Occurrences of modules appearing in paths: like `M` and `N` in `M.N.x`
 
 # Using the repository and installing the tools
 
