@@ -7,6 +7,22 @@ It contains a development version of the tools required to provide project-wide
 occurrences to ocaml developers. These tools include: the compiler, dune, a new
 indexing binary and updated merlin / ocaml-lsp servers.
 
+# What the feature does...
+
+✅ Every usages of types, values, constructors and labels in *ml files* in the entirer workspace
+
+✅ Usages of modules (like in `include M`)
+
+✅ Can be called on any such usage or on the *definition* itself
+
+# ...what is does not cover yet:
+
+❌ Usages of types and modules in *mli* files
+
+❌ Declarations related to definitions in both *ml* and *mli* files.
+
+❌ Occurrences of modules appearing in paths: `M.N.x`
+
 # Using the repository and installing the tools
 
 ```sh
@@ -35,9 +51,6 @@ usages in all the project's sources.
 
 # Current limitations
 
-- Occurrences of modules are not yet fully supported. Notably module names
-  appearing in paths (like `Mymodule.x`) are not indexed. The feature should
-  work as expected for values, types, constructors and labels.
 - Declarations are not considered. Only the definition and usages of a type,
   value or module can be used as a starting point to perform a query. The result
   of the query will show all the usages along with its definition but not the
