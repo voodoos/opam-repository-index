@@ -11,7 +11,7 @@ indexing binary and updated merlin / ocaml-lsp servers.
 
 ✅ Every usages of types, values, constructors and labels in *ml files* in the entirer workspace
 
-✅ Usages of modules (like in `include M`)
+✅ Usages of modules (like in `include M`) in *ml* files
 
 ✅ Can be called on any such usage or on the *definition* itself
 
