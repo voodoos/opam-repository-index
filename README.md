@@ -11,7 +11,7 @@ indexing binary and updated merlin / ocaml-lsp servers.
 
 ✅ Every usages of types, values, constructors and labels in *ml files* in the entire workspace
 
-✅ Usages of modules (like M in `include M`) in *ml* files
+✅ Usages of modules (like `M` in `include M`) in *ml* files
 
 ✅ Can be called on any such usage or on the *definition* itself
 
@@ -21,7 +21,7 @@ indexing binary and updated merlin / ocaml-lsp servers.
 
 ❌ *Declarations* related to definitions in both *ml* and *mli* files.
 
-❌ Occurrences of modules appearing in paths: like `M` and `N` in `M.N.x`
+❌ Occurrences of modules appearing in paths: like `M` and `N` in `M.N.P`
 
 # How-to
 
