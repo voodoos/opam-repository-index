@@ -9,15 +9,13 @@ indexing binary and updated merlin / ocaml-lsp servers.
 
 # What the feature does...
 
-✅ Every usages of types, values, constructors and labels in *ml files* in the entire workspace
+✅ Every *usages* of types, values, constructors and labels in ml and mli files in the entire workspace
 
-✅ Usages of modules (like `M` in `include M`) in *ml* files
+✅ Direct usages of modules (like `M` in `include M`)
 
 ✅ Can be called on any such usage or on the *definition* itself
 
 # ...what is does not cover yet:
-
-❌ Usages of types and modules in *mli* files
 
 ❌ *Declarations* related to definitions in both *ml* and *mli* files.
 
