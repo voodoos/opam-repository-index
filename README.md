@@ -55,6 +55,12 @@ In vscode, or another editor using lsp, place the cursor on a definition or usag
 
 https://github.com/voodoos/opam-repository-index/assets/5031221/c715f180-d3f7-4e09-b29b-e43872465511
 
+Another example, with renaming. One declaration still must be renamed manually for the build to succeed:
+
+https://github.com/voodoos/opam-repository-index/assets/5031221/84976f53-5915-48e7-8c78-6977466af197
+
+
+
 
 # Current limitations
 
